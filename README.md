@@ -13,7 +13,7 @@ This project can be divided into steps:
 
 Going with [spf13/cobra](https://github.com/spf13/cobra) is an easy choice when building a CLI application. I could easily add stuff like persistent flags and such with the help of it.
 
-The code can be found in `/Keyvaluecli`.
+The code can be found in `/keyvaluecli`.
 
 ## How to Use This application
 
@@ -26,7 +26,7 @@ docker-compose up --build
 # --network="host" allows the container to access host's network
 # this means that it can connect to Kafka easily as compared to
 # setting up a bridge network inside Docker
-docker run -it --rm --network="host" mahendrarathore/keyvaluestorage:latest
+docker run -it --rm --network="host" mahendrarathore/keyvaluestorages:latest
 ```
 
 Once the server is up and running, we can make requests using `curl`,
@@ -45,7 +45,7 @@ To install the CLI client
  
 ```
 
-go install github.com/mahendrarathore1742/keyvaluestorage/keyvaluecli@latest
+go install github.com/mahendrarathore1742/keyvaluestorages/keyvaluecli@latest
 
 
 ```
